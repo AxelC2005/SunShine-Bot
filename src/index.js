@@ -23,7 +23,7 @@ const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
     // Registrar nuevos comandos globalmente
     await rest.put(
       Routes.applicationCommands(process.env.DISCORD_CLIENT_ID),
-      { body: [registerCommand.toJSON(), helpCommand.toJSON()] }
+      { body: [registerCommand.toJSON(), helpCommand.toJSON(), setPrefixCommand.toJSON()] }
     );
     console.log('✅ Comandos registrados globalmente.');
   } catch (error) {
