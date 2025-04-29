@@ -2,7 +2,7 @@ import 'dotenv/config';
 import { client } from './client.js';
 import { data as registerCommand, execute as registerExecute } from './commands/register.js';
 import { data as helpCommand, execute as helpExecute } from './commands/help.js';
-import { data as addWeaponCommand, execute as addWeaponExecute } from './commands/add_weapon.js';
+import { data as addWeaponCommand, execute as addWeaponExecute } from './commands/admin/add_weapon.js';
 import './events/ready.js';
 import { REST, Routes } from 'discord.js';
 
