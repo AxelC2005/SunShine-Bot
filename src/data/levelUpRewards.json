@@ -1,0 +1,21 @@
+{
+    "asesino": {
+      "1": "Cuchillo Oxidado",
+      "5": "Cuchillo Afilado",
+      "10": "Katana Sombría",
+      "20": "Daga Legendaria"
+    },
+    "informante": {
+      "1": "Micrófono Espía",
+      "5": "Camuflaje Urbano",
+      "10": "Gafas de Visión Nocturna",
+      "20": "Dispositivo de Invisibilidad"
+    },
+    "vendedor": {
+      "1": "Pistola de Bengalas",
+      "5": "Rifle Ligero",
+      "10": "Escopeta Táctica",
+      "20": "Lanzagranadas Compacto"
+    }
+  }
+  

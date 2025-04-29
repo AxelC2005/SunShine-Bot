@@ -1,5 +1,5 @@
 import { SlashCommandBuilder, PermissionFlagsBits } from 'discord.js';
-import { supabase } from '../supabase.js';
+import { supabase } from '../../supabase.js';
 
 export const data = new SlashCommandBuilder()
   .setName('add_weapon')
