@@ -2,7 +2,6 @@ import 'dotenv/config';
 import { client } from './client.js';
 import { data as registerCommand, execute as registerExecute } from './commands/register.js';
 import { data as helpCommand, execute as helpExecute } from './commands/help.js';
-import { data as setPrefixCommand, execute as setPrefixExecute } from './commands/setprefix.js';
 import { data as addWeaponCommand, execute as addWeaponExecute } from './commands/add_weapon.js';
 import './events/ready.js';
 import { REST, Routes } from 'discord.js';
@@ -19,7 +18,6 @@ process.on('uncaughtException', error => {
 const commands = new Map();
 commands.set(registerCommand.name, registerExecute);
 commands.set(helpCommand.name, helpExecute);
-commands.set(setPrefixCommand.name, setPrefixExecute);
 commands.set(addWeaponCommand.name, addWeaponExecute);
 
 // Registrar los comandos
@@ -30,7 +28,6 @@ const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
     const commandsArray = [
       registerCommand.toJSON(),
       helpCommand.toJSON(),
-      setPrefixCommand.toJSON(),
       addWeaponCommand.toJSON()
     ];
 
